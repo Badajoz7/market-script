@@ -1,3 +1,5 @@
+#Sınıfların tanımlanması
+
 class magaza():
     urunler = []
     def urun_ekle(self,ekle):
@@ -9,11 +11,12 @@ class urun():
         self.stok = 0
         self.indirim = 0
         self.fiyat = 0
-        
+    
 magaza = magaza()
 urun = urun()
 
-menu = [1,2,3,4,5,6,7]
+#Menü sayfası
+
 print ("""
                MENÜ
        [1]: Satış Sayfası
@@ -21,9 +24,18 @@ print ("""
        [3]: Fiyat Sayfası
        [4]: Ürün Sayfası
        [5]: Sistemden Çıkış
-               MENÜ
+       
        """)
 secim = int(input("Lütfen bir seçim yapınız: "))
 
-
-
+if secim==1:
+    (
+     print("""
+               SATIŞ SAYFASI
+          [A]: Satış Bilgisi Görüntüle
+          [B]: Satış Verisi Ekle
+          [C]: Satış Verisi Çıkar
+          [D]: Satış Bilgilerini Temizle
+          
+           """)
+    )
